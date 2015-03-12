@@ -232,9 +232,9 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
                 ++$level;
             }
 
-            if ($level < 0) {
+            /*if ($level < 0) {
                 throw new Twig_Error_Loader(sprintf('Looks like you try to load a template outside configured directories (%s).', $name));
-            }
+            }*/
         }
     }
 }
